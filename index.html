@@ -1,5 +1,121 @@
-<html>
-<body>
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159855281-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159855281-1');
+  </script>
+  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5BLCDKZ');</script>
+<!-- End Google Tag Manager -->
+  
+  <title>TV-kanalen.net - Uw favoriete zenders</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Kris Adriaenssens">  
+  <meta name="description" content="Op zoek naar gratis TV kanalen, nieuws, films en tv programma's? Klik op uw kanaal naar keuze en navigeer naar de website van uw favoriete zender in Belgie of Nederland. Looking for free tv channels, news films and programs? ">
+  <meta name="keywords" content="Gratis Kanalen,Gratis Nieuws,Gratis Video,Free Video,Free News,Free Channels,No registration"> 
+  <link rel="icon" href="thumbnails/favicon.ico">  
+  <link rel="apple-touch-icon" href="thumbnails/apple-touch-icon.png">  
+  
+  <!--  bootstrap4 --> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>  
+
+  <!-- Cookie management -->   
+<script>
+<!-- Set a parameter in the Cookie with an expiration time -->   
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+<!-- Return a parameter from the cookie when the page loads -->   
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+<!-- Check if a parameter agreed=true has been set in the cookie -->   
+function checkIfCookieAgreed() {
+  var agreed=getCookie("agreed");
+  if (agreed != "true") {      // ask the customer if he agrees with the cookies that are used by Google Analitics
+     if  (confirm("Wij gebruiken cookies om uw gebruiksgemak te verbeteren. Deze cookies worden gedeeld met Google. Google Analytics en Google TagManager worden gebruikt om statistieken te genereren. Door meteen verder te gaan naar onze website, geeft u toestemming voor alle cookies en een optimale surfervaring. Bedankt voor uw vertrouwen! Indien U akoord gaat druk op OK. We are using cookies to improve your user experience. Via these cookies we share for example your IP address and your device type with Google. Google Analytics and Google Tag Manager are used to generate statistics. If you agree press OK")){
+	    setCookie("agreed", "true", 180);  // cookie will expire after 180 days
+	 }
+  }	 
+}
+</script>  
+
+<!-- Scale the images if the cursor hoovers over it -->   
+<style>
+img:hover {
+  transform: scale(1.1,1.1); 
+}
+</style>	
+	
+</head>
+<!-- Check if user agrees with cookies -->
+<body onload="checkIfCookieAgreed()">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BLCDKZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Display the channel matrix  -->
+<div class="container-fluid bg-dark text-white">
+    <h3><center>TV-kanalen.net</center></h3>
+	<a href="http://www.vrt.be/vrtnws/"           ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-vrt-be-vrtnws.png"    alt="VRT NWS"      width="75" ></a>
+    <a href="http://www.vrt.be/vrtnu"             ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-vrt-be-vrtnu.png"     alt="VRT NU"       width="75"></a>
+	<a href="http://www.ketnet.be/"               ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-ketnet-be.png"        alt="Ketnet"       width="75" ></a>
+	<a href="http://www.nickelodeon.nl/"          ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-nickelodeon-nl.png"   alt="nickelodeon"  width="75" ></a>
+    <a href="http://www.vtm.be/vtmgo"             ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-vtm-be-vtmgo.png"     alt="vtm GO"       width="75" ></a>
+    <a href="http://www.npostart.nl"              ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-npostart-nl.png"      alt="NPO"          width="75" ></a>
+    <a href="http://www.atv.be"                   ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-atv-be.png"           alt="atv"          width="75" ></a>
+    <a href="http://www.mtv.be"                   ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-mtv-be.png"           alt="mtv"          width="75" ></a>    
+	<a href="http://www.fashiontv.com"            ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-fashiontv-com.png"    alt="fashiontv"    width="75" ></a>    	
+    <a href="http://www.eonline.com"              ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-eonline-com.png"      alt="E!"           width="75" ></a>    	
+    <a href="http://www.bbc.com"                  ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-bbc-com.png"          alt="BBC News"     width="75" ></a>
+    <a href="http://www.cnn.com"                  ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-cnn-com.png"          alt="CNN"          width="75" ></a>
+    <a href="http://www.cnbc.com/tv"              ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-cnbc-com-tv.png"      alt="CNBC"          width="75" ></a>
+    <a href="http://www.foxtv.be"                 ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-foxtv-be.png"         alt="FOXTV"          width="75" ></a>
+    <a href="http://www.euronews.com"             ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-euronews-com.png"     alt="EuroNews"          width="75" ></a>
+    <a href="http://www.africanews.com"           ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-africanews-com.png"   alt="AfricaNews"          width="75" ></a>
+    <a href="https://news.sky.com"                ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-news-sky-com.png"     alt="Sky News"          width="75" ></a>
+    <a href="http://www.aljazeera.com"            ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-aljazeera-com.png"    alt="Aljazeera"          width="75" ></a>
+    <a href="http://www.rtbf.be"                  ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-rtbf-be.png"          alt="Rtbf"          width="75" ></a>   
+    <a href="http://www.arte.tv"                  ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-arte-tv.png"          alt="Arte"          width="75" ></a>   
+    <a href="http://www.rtl.be/info"              ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-rtl-be-info.png"      alt="Rtl"          width="75" ></a>   
+    <a href="http://www.france24.com"             ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-france24-com.png"     alt="France 24"          width="75" ></a>
+    <a href="http://www.rai.it"                   ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-rai-it.png"           alt="Rai"          width="75" ></a>
+    <a href="http://www.nationalgeographic.com"   ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-nationalgeographic-com.png"  alt="Nat Geo"   width="75" ></a>
+    <a href="http://www.sporza.be/"               ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-sporza-be.png"        alt="Sporza"          width="75"></a>
+    <a href="http://www.bbc.com/sport"            ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-bbc-com-sport.png"    alt="BBC Sport"          width="75" ></a>
+	<a href="http://www.eurosport.com"            ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-eurosport-com.png"    alt="Eurosport"          width="75" ></a>
+ 	<a href="http://www.ted.com"                  ><img class="img-thumbnail img-fluid mt-2 mb-2 mr-2 ml-2" src="thumbnails/www-ted-com.png"          alt="TED"          width="75" ></a>
+</div>
 </body>
 </html>
