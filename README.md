@@ -13,7 +13,11 @@ The webpage is available at:
 1. To validate the webpage the [Google Mobile-Friendly](https://search.google.com/test/mobile-friendly?) test was used.
 2. To validate the webpage load speed [Google PagesSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) was used.
 3. To validate Accesible and SEO the Audit feature of the chrome Browser was used.
+
+![Google Chrome Audit Feature](/GoogleChromeAudit.png "Google Chrome Audit")
 ## Website Analytics
 [Google Tag Manager](https://tagmanager.google.com/) Was used to add a Tag to the website, [Google Analytics](https://analytics.google.com/analytics/web) to capture the statistics, [Google URL Builder](https://ga-dev-tools.appspot.com/campaign-url-builder/) to create campaign specific URL's and [Google DataStudio](https://datastudio.google.com) to create reports.
+
+![Google Data Studio](/GoogleDataStudio.png "Google Data Studio")
 ## Website Troubleshooting
 [Google Tag assistant](https://get.google.com/tagassistant/) was used to check the tags fired by the webpage.
