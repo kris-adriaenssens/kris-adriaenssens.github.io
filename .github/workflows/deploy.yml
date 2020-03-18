@@ -27,7 +27,7 @@ jobs:
     # Runs a command using the runners shell
     - name: Upload index.html to web server
       run: 
-        curl -p - --insecure  "ftp://$ftp_server:21/" --user "$ftp_user:$ftp_password" -T "index.html" 
+        curl -p --insecure  "ftp://$ftp_server:21/" --user "$ftp_user:$ftp_password" -T "index.html" 
 
     # Runs a set of commands using the runners shell
     - name: Deployment finished 
