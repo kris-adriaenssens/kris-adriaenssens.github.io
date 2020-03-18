@@ -13,4 +13,4 @@ jobs:
       with:
         ftp-server: ftp://users.skynet.be/
         ftp-username: ${{ secrets.FTP_USER }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
