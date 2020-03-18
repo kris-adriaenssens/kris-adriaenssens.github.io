@@ -24,17 +24,10 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
    
-    # Runs a set of commands using the runners shell
-    - name: Unit test Placeholder
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-
-    # Runs a 2 commands using the runners shell
+    # Runs a command using the runners shell
     - name: Upload index.html to web server
       run: 
-        echo Deploy website!,
-        curl -T index.html ftp://$ftp_user:$ftp_password@$ftp_server/index.html
+        curl -p - --insecure  "ftp://$ftp_server:21/" --user "$ftp_user:$ftp_password" -T "index.html" 
 
     # Runs a set of commands using the runners shell
     - name: Deployment finished 
