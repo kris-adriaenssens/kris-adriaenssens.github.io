@@ -21,3 +21,6 @@ The webpage is available at:
 ![Google Data Studio](/GoogleDataStudio.png "Google Data Studio")
 ## Website Troubleshooting
 [Google Tag assistant](https://get.google.com/tagassistant/) was used to check the tags fired by the webpage.
+
+## Website Deployment
+The action workflow deploy.yaml is used to automaticly deploy the index.html file to the production website after each commit to the master branch. 
