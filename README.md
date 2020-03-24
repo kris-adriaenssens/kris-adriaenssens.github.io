@@ -30,10 +30,10 @@ Google analitycs is also added to this website for learning.
 ![Google Data Studio](/GoogleDataStudio.png "Google Data Studio")
 Google sheets is used to import the data in spreadsheet format and to publish this data in chart format on the web.
 ![Google Sheets](/GoogleSheets.png "Google Sheets")
-Google Pages is used to publish an HTML report with the Google sheet chart statistics on the web.
-![Google Pages](/GooglePages.png "Google Pages")
+Google Sites is used to publish an HTML report with the Google sheet chart statistics on the web.
+![Google Sites](/GooglePages.png "Google Pages")
 The report is available at:
-[google web pages](https://sites.google.com/view/tv-kanalen-net-report/home)
+[google sites](https://sites.google.com/view/tv-kanalen-net-report/home)
 
 ## Website Troubleshooting
 [Google Tag assistant](https://get.google.com/tagassistant/) was used to check the tags fired by the webpage.
