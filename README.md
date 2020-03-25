@@ -18,25 +18,28 @@ The webpage is available at:
 ![Google Chrome Audit Feature](/GoogleChromeAudit.png "Google Chrome Audit")
 ## Website Analytics Collection
 Google analitycs is also added to this website for learning.
-[Google Tag Manager](https://tagmanager.google.com/) is used to add a Tag to the website:
+1. [Google Tag Manager](https://tagmanager.google.com/) is used to add a Tag to the website:
 ![Google Tag Manager](/GoogleTagManager.png "Google Tag Manager Studio")
 
-[Google Analytics](https://analytics.google.com/analytics/web) is used to collect all webpage statistics:
+2. [Google Analytics](https://analytics.google.com/analytics/web) is used to collect all webpage statistics:
 ![Google Analytics](/GoogleAnalytics.png "Google Analytics")
-[Google URL Builder](https://ga-dev-tools.appspot.com/campaign-url-builder/) is used to create campaign specific URL's.
+3. [Google URL Builder](https://ga-dev-tools.appspot.com/campaign-url-builder/) is used to create campaign specific URL's.
 
 ## Website Analytics Reporting
-[Google DataStudio](https://datastudio.google.com) is used to create internal HTML reports.
+1. [Google DataStudio](https://datastudio.google.com) is used to create HTML reports.
 ![Google Data Studio](/GoogleDataStudio.png "Google Data Studio")
-Google sheets is used to import the data in spreadsheet format and to publish this data in chart format on the web.
+The report is available at:
+[Google Data Studio](https://datastudio.google.com/reporting/e37b9103-072b-4c9e-a2a1-8fb537420142/page/6zXD?s=j6wpkTVsqHo)
+
+2. Google sheets is used to import the data in spreadsheet format and to also publish this data in chart format on the web.
 ![Google Sheets](/GoogleSheets.png "Google Sheets")
-Google Sites is used to publish an HTML report with the Google sheet chart statistics on the web.
+3. Google Sites is used to publish an HTML report with the Google sheet chart statistics on the web.
 ![Google Sites](/GooglePages.png "Google Pages")
 The report is available at:
-[google sites](https://sites.google.com/view/tv-kanalen-net-report/home)
+[Google sites](https://sites.google.com/view/tv-kanalen-net-report/home)
 
 ## Website Troubleshooting
-[Google Tag assistant](https://get.google.com/tagassistant/) was used to check the tags fired by the webpage.
+[Google Tag assistant](https://get.google.com/tagassistant/) is used to check the tags fired by the webpage.
 
 ## Website Deployment
 The action workflow deploy.yaml is used to automaticaly deploy the index.html file to the production website after each commit to the master branch. 
